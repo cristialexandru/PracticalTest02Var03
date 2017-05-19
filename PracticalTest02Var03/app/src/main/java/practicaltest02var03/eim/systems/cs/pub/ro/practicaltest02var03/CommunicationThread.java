@@ -88,6 +88,7 @@ public class CommunicationThread extends Thread {
                 Log.e(Constants.TAG, "[COMMUNICATION THREAD] Weather Forecast Information is null!");
                 return;
             }
+            Log.d(Constants.TAG, "[CASDADSADASDADS=======]" + result);
             printWriter.println(result);
             printWriter.flush();
         } catch (IOException ioException) {

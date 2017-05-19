@@ -13,8 +13,6 @@ import android.widget.Toast;
 
 public class PracticalTest02Var03MainActivity extends AppCompatActivity {
 
-    private EditText serverPortEditText = null;
-    private Button connectButton = null;
 
     // Client widgets
     private EditText port = null;
@@ -31,7 +29,7 @@ public class PracticalTest02Var03MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            String serverPort = serverPortEditText.getText().toString();
+            String serverPort = port.getText().toString();
             if (serverPort == null || serverPort.isEmpty()) {
                 Toast.makeText(getApplicationContext(), "[MAIN ACTIVITY] Server port should be filled!", Toast.LENGTH_SHORT).show();
                 return;
