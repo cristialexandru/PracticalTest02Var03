@@ -9,9 +9,30 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="practicaltest02var03.eim.systems.cs.pub.ro.practicaltest02var03.PracticalTest02Var03MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:text="Start"
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:text="Get"
+            android:id="@+id/get"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
 </RelativeLayout>
